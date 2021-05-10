@@ -1,0 +1,30 @@
+.profile-popup__save-button {
+    width: 360px;
+    height: 50px;
+    padding: 0;
+    border: 0;
+    background: rgba(0, 0, 0, 1);
+    border-radius: 2px;
+    margin: 48px 0 0 0;
+    cursor: pointer;
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.profile-popup__save-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .profile-popup__save-button {
+        width: 238px;
+        
+    }
+
+}
+

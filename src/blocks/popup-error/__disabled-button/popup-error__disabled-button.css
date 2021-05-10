@@ -1,0 +1,9 @@
+.popup-error__disabled-button {
+    cursor: default;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.popup-error__disabled-button:hover {
+    cursor: default;
+    background-color: rgba(0, 0, 0, .2);
+}

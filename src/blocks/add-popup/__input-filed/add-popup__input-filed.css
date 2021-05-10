@@ -1,0 +1,10 @@
+.add-popup__input-filed {
+    border: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0 0 30px 0;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.add-popup__input-filed:last-of-type {
+    margin: 0;
+}

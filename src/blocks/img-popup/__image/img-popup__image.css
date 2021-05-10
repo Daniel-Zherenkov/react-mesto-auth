@@ -1,0 +1,7 @@
+.img-popup__image {
+    max-width: 75vw;
+    max-height: 75vh;
+    padding-top: 49px;
+    padding-right: 49px;
+    background: transparent;
+}

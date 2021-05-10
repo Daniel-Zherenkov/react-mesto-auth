@@ -1,0 +1,27 @@
+
+.header__login {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.header__login:hover {
+    opacity: .6;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__login {
+        padding-right: 27px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .header__login  {
+        font-size: 14px;
+        line-height: 17px
+    }
+}
