@@ -25,7 +25,8 @@ function App() {
     const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = useState(false);
     const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = useState(false);
     const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = useState(false);
-    const [selectedCard, setSelectedCard] = useState(false);
+    const [selectedCard, setSelectedCard] = useState({});
+    const [isDataInCard, setIsDataInCard] = useState(false);
     const [currentUser, setCurrentUser] = useState({});
     const [initialCards, setInitialCards] = useState([]);
     const [loggedIn, setLoggedIn] = useState(false);
@@ -119,13 +120,13 @@ function App() {
         setIsEditAvatarPopupOpen(false)
         setIsEditProfilePopupOpen(false)
         setIsAddPlacePopupOpen(false)
-        setSelectedCard(false)
+        setIsDataInCard(false)
         setIsInfoToolTipOpen(false)
     }
 
     function handleCardClick(card) {
         setSelectedCard(card);
-        // console.log(card)
+        setIsDataInCard(true)
     }
     
     
@@ -266,7 +267,7 @@ function App() {
                     onAddPlace={handleAddPlace}
                     />
 
-                    <ImagePopup card={selectedCard} onClose={closeAllPopups} />
+                    <ImagePopup dataInCard={isDataInCard} card={selectedCard} onClose={closeAllPopups} />
 
                 </div>
             </CardsContext.Provider>
